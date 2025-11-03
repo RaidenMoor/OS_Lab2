@@ -57,7 +57,7 @@ void Stack<T>::push(const T& value) {
 template <typename T>
 T Stack<T>::pop() {
     if (isEmpty()) {
-        throw runtime_error("Stack is empty");
+        throw runtime_error("Стэк пустой");
     }
 
     Node* temp = top;
@@ -73,7 +73,7 @@ T Stack<T>::pop() {
 template <typename T>
 T& Stack<T>::peek() const {
     if (isEmpty()) {
-        throw runtime_error("Stack is empty");
+        throw runtime_error("Стэк пустой");
     }
     return top->data;
 }
